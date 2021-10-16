@@ -1,0 +1,175 @@
+@import '@/styles/content.scss';
+
+.wrapper {
+    .content {
+        display: flex;
+        .leftContent {
+            .totallyLeft {
+                margin: 20px 15px;
+                justify-content: space-between;
+                padding: 37px 16px;
+                .totalValue {
+                    display: flex;
+                    align-items: center;
+                    & > div {
+                        margin-right: 1.5rem !important;
+                    }
+                    svg {
+                        margin-left: 1rem;
+                        margin-bottom: 0.3rem;
+                        font-size: 18px;
+                        color: var(--primary-color);
+                        fill: var(--primary-color);
+                    }
+                    .totalAPY {
+                        margin-left: 10px;
+                        color: var(--primary-color);
+                        font-size: 16px;
+                    }
+                }
+                .address {
+                    display: flex;
+                    align-items: center;
+                    .arrowRight {
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        background-color: var(--color-bg-active);
+                        margin-left: 26px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        svg {
+                            transform: rotate(-45deg);
+                        }
+                    }
+                }
+            }
+
+            .borrowLimit {
+                border-radius: 25px;
+                margin: 20px 15px;
+                background-color: var(--primary-color);
+                padding: 20px 30px;
+                h3 {
+                    font-size: 28.5px;
+                    font-weight: 900;
+                    color: var(--text-color);
+                }
+                p {
+                    font-size: 13.5px;
+                    font-weight: 900;
+                    color: var(--text-color);
+                }
+                .total {
+                    font-size: 18px;
+                    font-weight: 900;
+                    color: var(--text-color);
+                }
+                .percent {
+                    :global {
+                        .ant-progress .ant-progress-inner {
+                            background-color: rgb(217, 157, 67);  
+                            .ant-progress-bg {
+                                background: rgb(255, 255, 255);
+                                height: 7px;
+                            }  
+                        }
+                    }
+                }
+            }
+        }
+
+        .rightContent {
+            @media only screen and (min-width: 768px) {
+                & {
+                    width: 100%;
+
+                }
+            }
+            @media only screen and (min-width: 992px) {
+                & {
+                    width: 58.3333%;
+                }
+            }
+
+            .totallyLeft {
+                padding: 35px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .balance {
+                    text-align: center;
+                    .label {
+                        font-size: 16px;
+                        font-weight: 900;
+                        color: var(--text-color);
+                        text-transform: capitalize;
+                    }
+                    .value {
+                        @media only screen and (max-width: 1280px) {
+                            & {
+                                font-size: 20px;
+                            }
+                        }
+                        font-size: 25px;
+                        font-weight: 900;
+                        color: var(---text-color);
+                        margin-top: 44px;
+                    }
+                }
+                .valueBalance {
+                    position: relative;
+                    :global {
+                        .ant-progress-inner {
+                            width: 150px;
+                            height: 150px;
+                            font-size: 28.5px;
+                        }
+                    }
+                    .circleLable {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        width: 100%;
+                        margin: 0px;
+                        padding: 0px;
+                        color: var(--color-green);
+                        line-height: 1;
+                        white-space: normal;
+                        text-align: center;
+                        transform: translate(-50%, -50%);
+                        .percent {
+                            color: var(--color-green);
+                            font-size: 20px;
+                            font-weight: 600;
+                            margin-bottom: 17px;
+                        }
+                        .label {
+                            color: var(--text-secondary);
+                            font-size: 15.5px;
+                            font-weight: normal;
+                            @media only screen and (max-width: 1280px) {
+                                & {
+                                    font-size: 16px;
+                                }
+                            }
+ 
+                        }
+                    }
+                }
+                .toggle {
+                    text-align: center;
+                    margin-top: 2rem;
+                    margin-bottom: 2rem;
+                    .desc {
+                        margin-top: 1.5rem;
+                        font-size: 14px;
+                        font-weight: 900;
+                    }
+                }
+
+            }
+        }
+    }
+}

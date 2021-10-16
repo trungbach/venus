@@ -1,0 +1,104 @@
+@import '@/styles/content.scss';
+
+.overview {
+    width: 100%;
+    .drop {
+        display: flex;
+        align-items: center;
+        :global {
+            .ant-select {
+               .ant-select-selector  {
+                    background-color: transparent;
+                    border: none;
+               }
+               .ant-select-selection-item {
+                    padding: 0.3rem;
+                    padding-left: 0.5rem;
+               }
+                .ant-select-selection {
+                    background-color: transparent;
+                    font-size: 17px;
+                    font-weight: 900;
+                    color: var(--text-color);
+                    margin-top: 4px;
+                    img {
+                        margin-right: 13px !important;
+                    }
+                }
+            }
+        }
+    }
+    .addToken {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        .token {
+            display: flex;
+            align-items: center;
+            margin-right: 2rem;
+            svg {
+                cursor: pointer;
+                font-size: 18px;
+                color: var(--color-green);
+                margin-left: 1rem;
+            }
+        }
+    }
+    .historyLabel {
+        font-size: 16px;
+        font-weight: normal;
+        color: var(--text-secondary);
+        margin: 10px 41px 0px;
+    }
+    .totalSupply {
+        .totalValue {
+            text-align: right;
+            font-size: 19px;
+            font-weight: 900;
+            color: var(--color-green);
+        }
+        .totalDesc {
+            text-align: right;
+            font-size: 16px;
+            font-weight: normal;
+            color: var(--text-secondary);
+        }
+    }
+
+    ul {
+        li {
+            display: flex;
+            justify-content: space-between;
+            .label {
+                font-size: 16px;
+                font-weight: normal;
+                color: var(--text-secondary);
+                text-transform: capitalize;
+            }
+            .value {
+                font-size: 17px;
+                font-weight: 900;
+                color: var(--text-color);
+            }
+        }
+    }
+}
+
+.selectCrypto {
+    :global {
+        .ant-select-item {
+            background-color: var(--color-bg-main);
+            &:hover {
+                background-color: var(--color-bg-primary);
+            }
+        }
+        .ant-select-item-option-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.3rem;
+            padding-left: 0.5rem;
+        }
+    }
+}

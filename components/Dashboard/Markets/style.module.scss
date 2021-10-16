@@ -1,0 +1,43 @@
+@import '@/styles/base.scss';
+
+.markets {
+    border-radius: 25px;
+    margin: 20px 15px;
+    background-color: var(--color-bg-primary);
+    padding:16px;
+
+    :global {
+        .ant-tabs-nav-list {
+            margin: 0 auto;
+        }
+        .ant-tabs-nav {
+            &:before {
+                border: none !important;
+            }
+            .ant-tabs-tab {
+                background-color: transparent !important;
+                border: none !important;
+                padding: 1rem 4.5rem;
+            }
+            .ant-tabs-tab-active {
+                border-radius: 3px !important;
+                font-weight: 600;
+                color: var(--text-color);
+                background-color: var(--color-bg-active) !important;
+                .ant-tabs-tab-btn {
+                    color: var(--text-color);
+                }
+            }
+            .ant-tabs-tab-btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: var(--color-text-inactive);
+            }
+        }
+        
+       
+        
+        
+    }
+}

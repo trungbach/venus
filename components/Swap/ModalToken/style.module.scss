@@ -1,0 +1,132 @@
+.modalToken {
+    .inputToken {
+        padding: 0 2rem;
+        input {
+            position: relative;
+            display: flex;
+            padding: 16px;
+            align-items: center;
+            width: 100%;
+            white-space: nowrap;
+            background: none;
+            outline: none;
+            border-radius: 20px;
+            color: rgb(0, 0, 0);
+            border: 1px solid rgb(206, 208, 217);
+            appearance: none;
+            font-size: 18px;
+            transition: border 100ms ease 0s;
+        }
+    }
+    .commonBases {
+        padding: 0 2rem;
+        .title {
+            margin-top: 1.5rem;
+            font-weight: bold;
+            font-size: 14px;
+            display: flex;
+            span {
+                color: var(--dark-color);
+                margin-right: 1rem;
+            }
+            align-items: center;
+        }
+        .tooltip {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0px;
+            width: 18px;
+            height: 18px;
+            border: none;
+            background: none rgb(237, 238, 242);
+            outline: none;
+            cursor: default;
+            border-radius: 36px;
+            font-size: 14px;
+            color: rgb(86, 90, 105);
+            
+        }
+        :global {
+            .ant-tooltip-open {
+                color: #000;
+            }
+        }
+
+        .listCommon {
+           display: flex;
+           align-items: center;
+            & > div {
+                cursor: pointer;
+                border: 1px solid rgb(206, 208, 217);
+                border-radius: 10px;
+                display: flex;
+                padding: 6px;
+                align-items: center;
+                font-weight: bold;
+                letter-spacing: 1.3px;
+                margin: 1rem 1rem 2rem 0;
+                & > div {
+                    margin-right: 8px !important;
+
+                }
+            }
+        }
+    }
+    .listToken {
+        position: relative;
+        height: 178px;
+        width: 100%;
+        overflow: auto;
+        will-change: transform;
+        direction: ltr;
+        border-top: 1px solid rgb(237, 238, 242);
+        .token {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 4px 20px;
+            height: 56px;
+            cursor: pointer;
+            &:hover {
+                background-color: rgb(237, 238, 242);
+            }
+            .tokenName {
+                display: flex;
+                align-items: center; 
+                & > div:first-child {
+                    margin-right: 1rem !important;
+                }
+                .name {
+                    font-weight: bold;
+                }
+            }
+            .tokenValue {
+                white-space: nowrap;
+                overflow: hidden;
+                max-width: 5rem;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+    .manageToken {
+        cursor: pointer;
+        text-align: center;
+        width: 100%;
+        border-radius: 0px 0px 20px 20px;
+        padding: 20px;
+        background-color: rgb(247, 248, 250);
+        border-top: 1px solid rgb(237, 238, 242);
+        box-sizing: border-box;
+        font-weight: 500;
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgb(213, 0, 102);
+        text-decoration: underline;
+        & > div {
+            margin-right: 0.7rem !important;
+        }
+    }
+}

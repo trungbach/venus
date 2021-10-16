@@ -1,0 +1,11 @@
+@import '@/styles/base.scss';
+
+.loading {
+    h2 {
+        font-size: 3rem;
+        @include text-gradient;
+        font-weight: bold;
+        font-family: Rajdhani;
+        text-align: center;
+    }
+}

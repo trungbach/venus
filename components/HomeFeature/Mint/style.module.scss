@@ -1,0 +1,58 @@
+@import '@/styles/base.scss';
+
+.mint {
+    padding-top: 80px;
+    margin-top: -80px;
+    .minContainer {
+        padding: 0 90px;
+        background: #ffd976;
+        border-radius: 18px;
+        display: flex;
+        .mintContent {
+            width: 45%;
+            padding: 50px 0;
+            .mintLogo {
+                margin-bottom: 25px;
+            }
+            .mintText {
+                line-height: 1.4;
+                margin-bottom: 35px;
+                color: #333;
+                font-size: 17px;
+                @media (min-width: 500px) {
+                    & {
+                        font-size: calc(.00978 * 100vw + 12.1087px);
+                    }
+                }
+            }
+            .minBtn {
+                a {
+                    padding: 20px 52px;
+                }
+            }
+        }
+        .mintMedia {
+            width: 55%;
+            align-self: flex-end;
+            text-align: right; 
+            & > div {
+                width: 75%;
+                margin-right: -15px;
+            }
+            @media only screen and (max-width: 1420px) {
+                & > div {
+                    margin-right: 0;
+                }
+            }
+                
+        }
+    }
+    @media only screen and (max-width: 1420px) {
+        .minContainer {
+            margin: 0 30px;
+            width: calc(100% - 60px);
+            padding: 0 30px;
+        }
+    }
+        
+}

@@ -1,0 +1,169 @@
+@import '@/styles/base.scss';
+
+.markets {
+    padding-top: 80px;
+    margin-top: -80px;
+    .titleContainer {
+        display: flex;
+        justify-content: center;
+        .titleText {
+            color: #c2c2c2;
+            line-height: 1.4;
+            margin-bottom: 20px;
+            font-size: 18px;
+            @media (min-width: 500px) {
+                & {
+                    font-size: calc(.01304 * 100vw + 11.47826px);
+                }
+            }
+        }
+    }
+    .marketContainer {
+        padding: 40px 65px;
+        border: 1px solid #ebebeb;
+        box-shadow: 0 9px 15px rgb(0 0 0 / 2%);
+        border-radius: 12px;
+        @media only screen and (max-width: 1420px) {
+            & {
+                margin: 0 30px;
+                width: calc(100% - 60px);
+                padding: 30px;
+            }
+        }
+
+        .header {
+            border-bottom: 1px solid #f4f4f4;
+            padding-bottom: 37px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .drop {
+                min-width: 203px;
+                position: relative;
+                :global {
+                    .ant-dropdown-link {
+                        border: 1px solid #ebebeb;
+                        background-color: #fff;
+                        border-radius: 9px;
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        padding: 14px 20px;
+                       
+                    }
+                }
+                .dropText {
+                    width: calc(100% - 50px);
+                    font-size: 16px;
+                    line-height: 1.4;
+                    color: #252525;
+                    font-family: NunitoSans-Bold;
+                    margin-left: 16px;
+                }
+               
+            }
+            .headerInfo {
+                text-align: right;
+                .infoProp {
+                    color: #818181;
+                    line-height: 1.4;
+                    font-family: NunitoSans-SemiBold;
+                    margin-bottom: 2px;
+                    font-size: 13px;
+                    @media (min-width: 500px) {
+                        & {
+                            font-size: calc(.00326 * 100vw + 11.36957px);
+                        }
+                    }
+                }
+                .infoValue {
+                    color: #252525;
+                    font-size: 18px;
+                    font-family: NunitoSans-Bold;
+                    font-size: 15px;
+                    @media (min-width: 500px) {
+                        & {
+                            font-size: calc(.00326 * 100vw + 13.36957px);
+                        }
+                    }
+                }
+            }
+        }
+        .marketInfo {
+            background: #fafafa;
+            border-radius: 8px;
+            padding: 22px 60px;
+            @media only screen and (max-width: 1420px) {
+                & {
+                    padding: 20px 30px;
+                }
+            }
+            .infoItems {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                .infoItem {
+                    .infoItemProp {
+                        color: #818181;
+                        line-height: 1.4;
+                        font-family: NunitoSans-SemiBold;
+                        margin-bottom: 2px;
+                        font-size: 13px;
+                    }
+                    .infoItemValue {
+                        color: #252525;
+                        font-size: 18px;
+                        font-family: NunitoSans-Bold;
+                        font-size: 15px;
+                    }
+                    .token {
+                        cursor: pointer;
+                        text-decoration: none;
+                    }
+                    @media (min-width: 500px) {
+                        .infoItemProp {
+                            font-size: calc(.00326 * 100vw + 11.36957px);
+                        }
+                        .infoItemValue {
+                            font-size: calc(.00326 * 100vw + 13.36957px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.overlayClassName {
+    border: 1px solid #ebebeb;
+    background-color: #fff;
+    box-shadow: 0 20px 16px -14px rgb(0 0 0 / 4%);
+    border-radius: 9px;
+    max-height: 253px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    transition: .3s ease;
+    li {
+        padding: 14px 20px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        cursor: pointer;
+        transition: .3s ease;
+        :global {
+            .ant-dropdown-link {
+                display: flex;
+                align-items: center;
+            }
+        }
+        .dropText {
+            width: calc(100% - 50px);
+            font-size: 16px;
+            line-height: 1.4;
+            color: #252525;
+            font-family: NunitoSans-Bold;
+            margin-left: 16px;
+        }
+   }
+
+}

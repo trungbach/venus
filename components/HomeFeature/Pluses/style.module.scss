@@ -1,0 +1,111 @@
+@import '@/styles/base.scss';
+
+.pluses {
+    .plusesContainer {
+        padding: 0;
+    }
+    
+    .plusesItems {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -20px;
+        transform: translateY(-50%);
+        @media only screen and (max-width: 1420px) {
+            & {
+                margin: 0 10px;
+            }
+        }
+    }
+    .plusesItem {
+        width: calc(33.333% - 40px);
+        margin: 0 20px;
+        background: #fff;
+        border: 1px solid #ebebeb;
+        box-shadow: 0 9px 15px rgb(0 0 0 / 2%);
+        border-radius: 12px;
+        padding: 53px;
+        transition: .3s ease;
+        &:hover {
+            background: #fffcf5;
+            box-shadow: 0 9px 15px rgb(0 0 0 / 2%);
+            transform: translateY(-10px);
+        }
+       
+        @media only screen and (max-width: 1420px) {
+            & {
+                padding: 30px;
+            }
+        }
+            
+        .head {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;  
+            .plusesIcon {
+                width: 30px;
+                margin-right: 20px;
+                display: flex;
+                align-items: center;
+                .svgImg1 {
+                    background-position: 35.64356435643565% 82.23350253807106%;
+                    background-size: 731.25% auto;
+                    width: 32px;
+                    &:before {
+                        content: "";
+                        display: block;
+                        font-size: 0;
+                        line-height: 0;
+                        padding-top: 115.625%;
+                    }
+                }
+                .svgImg2 {
+                    background-position: 51.48514851485149% 80.1980198019802%;
+                    background-size: 731.25% auto;
+                    width: 32px;
+                    &:before {
+                        content: "";
+                        display: block;
+                        font-size: 0;
+                        line-height: 0;
+                        padding-top: 100%;
+                    }
+                }
+                .svgImg3 {
+                    background-position: 67.32673267326733% 80.1980198019802%;
+                    background-size: 731.25% auto;
+                    width: 32px;
+                    &:before {
+                        content: "";
+                        display: block;
+                        font-size: 0;
+                        line-height: 0;
+                        padding-top: 100%;
+                    }
+                }
+            }
+            .title {
+                width: calc(100% - 50px);
+                font-family: NunitoSans-Bold;
+                color: var(--primary-color);
+                font-size: 16px;
+                @media (min-width: 500px) {
+                    & {
+                        font-size: calc(.00652 * 100vw + 12.73913px);
+                    }
+                }
+            }
+        }
+       
+        .plusesDesc {
+            line-height: 1.4;
+            font-family: NunitoSans-SemiBold;
+            color: #666;
+            font-size: 14px;
+            @media (min-width: 500px) {
+                & {
+                    font-size: calc(.00326 * 100vw + 12.36957px);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,70 @@
+@import '@/styles/app.scss';
+
+.startingPrice {
+    .description {
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         padding: 1rem;
+         font-weight: 700;
+         font-size: 14px;
+         color: rgb(213, 0, 102);
+         text-align: left;
+         background-color: rgb(253, 234, 241);
+         border-radius: 12px;
+         margin-top: 1rem;
+         margin-bottom: 1rem;
+    } 
+    .btnAction {
+         margin-top: 1rem;
+          background-color: rgb(247, 248, 250);
+          color: rgb(86, 90, 105);
+          font-size: 16px;
+          font-weight: 500;
+          padding: 7px;
+          border-radius: 6px;
+          border: 1px solid transparent;
+          display: flex;
+          flex-wrap: nowrap;
+          align-items: center;
+          cursor: pointer;
+          position: relative;
+          span {
+               position: absolute;
+               right: 1rem;
+               top: 50%;
+               transform: translateY(-50%);
+          }
+     }
+    .formItem {
+          border: 1px solid rgb(237, 238, 242);
+          animation: 0.6s linear 0s 1 normal none running none;
+          width: 100%;
+          padding: 1rem;
+          border-radius: 16px;
+          h5 {
+          font-weight: 700;
+          font-size: 1.7rem;
+          }
+    
+          .inputValue {
+               input {
+               max-width: 150px;
+               color: rgb(0, 0, 0);
+               font-weight: 500;
+               outline: none;
+               border: none;
+               font-size: 24px;
+               white-space: nowrap;
+               overflow: hidden;
+               text-overflow: ellipsis;
+               padding: 0px;
+               appearance: textfield;
+               filter: none;
+               opacity: 1;
+               transition: opacity 0.2s ease-in-out 0s;
+               }
+
+          }
+     }
+ }

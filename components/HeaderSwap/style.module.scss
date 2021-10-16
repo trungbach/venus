@@ -1,0 +1,66 @@
+.swapHead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.6rem;
+    .headMenu {
+        display: flex;
+        align-items: center;
+        .logo {
+            margin-right: 2rem;
+        }
+        .tabs {
+            display: flex;
+            border-radius: 16px;
+            background-color: var(--text-color);
+            padding: 0.7rem;
+            align-items: center;
+            .tab {
+                padding: 0.5rem 0;
+                a {
+                    color: var(--dark-color);
+                    font-weight: bold;
+                    font-size: 1.6rem;
+                    border-radius: 1.6rem;
+                    padding: 0.7rem 1rem;
+                    background-color: #fff;
+                }
+                a:first-child {
+                    margin-right: 1rem;
+                }
+                .active {
+                    background-color: rgb(221, 224, 230);
+                }
+            }
+        }
+    }
+    .headInfo {
+        display: flex;
+        align-items: center;
+        color: rgb(0, 0, 0);
+        font-weight: 700;
+        .network, .balance, .address {
+            align-items: center;
+            background-color: #fff;
+            border: 2px solid rgb(247, 248, 250);
+            border-radius: 12px;
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+            display: flex;
+            font-weight: 700;
+            justify-content: space-between;
+            padding: 6px 8px;
+            font-size: 1.6rem;
+            
+            & > div {
+                margin-right: 8px !important;
+            }
+        }
+        .address {
+            svg {
+                border-radius: 50%;
+                margin-left: 8px;
+            }
+        }
+    }
+}

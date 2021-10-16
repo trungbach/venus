@@ -1,0 +1,93 @@
+@import '@/styles/base.scss';
+
+.footer {
+    margin-top: 160px;
+    background-color: #2f2f2f;
+    padding: 50px 0 60px;
+   
+    .footerContainer {
+        padding: 0 90px;
+        .footerTop {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #3e3e3e;
+            padding-bottom: 55px;
+            .footerLogo {
+                .logo {
+                    text-decoration: none;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+            .footerMenu {
+                display: flex;
+                flex-grow: 1;
+                .menuList {
+                    margin: 0 auto;
+                    display: flex;
+                    align-items: center;
+                    list-style-type: none;
+                    margin: 0 auto;
+                    .menuListItem {
+                        margin-right: 80px;
+                        @media only screen and (max-width: 1420px) {
+                            & {
+                                margin-right: 60px;
+                            }
+                        }
+                        .menuLink {
+                            font-size: 15px;
+                            font-family: AvertaCY-Semibold;
+                            color: #575757;
+                            text-decoration: none;
+                            &:hover {
+                                color: var(--primary-color);
+                            }
+                        }
+                       
+                    }
+                    .whitePaper {
+                        margin-left: auto;
+                        padding: 14px 45px;
+                        color: #fff;
+                        font-size: 15px;
+                        font-family: NunitoSans-ExtraBold;
+                        text-decoration: none;
+                        display: inline-flex;
+                        &:hover {
+                            color: #fff !important;
+                        }
+                    }
+                }
+            }
+        }
+        .footerBottom {
+            padding-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center; 
+            .copyright {
+                color: #4d4d4d; 
+            }
+            .social {
+                .socialList {
+                    display: flex;
+                    align-items: center;
+                    .socialItem {
+                        margin-right: 34px;
+                        .socialLink {
+                            display: flex;
+                            align-items: center;
+                            position: relative;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 1420px) {
+        .footerContainer {
+            padding: 0 30px;
+        }
+    }
+}

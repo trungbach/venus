@@ -1,0 +1,138 @@
+
+.primaryBtn {
+    background: var(--primary-color);
+    border-radius: 10px;
+    padding: 14px 45px;
+    color: #fff;
+    font-size: 15px;
+    text-transform: capitalize;
+    font-family: NunitoSans-ExtraBold;
+    text-decoration: none;
+    display: inline-flex;
+    &:hover {
+        box-shadow: 0 4px 19px rgb(249 190 86 / 47%);
+        transform: translateY(-2px);
+        color: #fff !important;
+    }
+}
+
+.secondaryBtn {
+    font-size: 16px;
+    color: #aaa;
+    font-family: NunitoSans-Bold;
+    border: 1px solid #e4e4e4;
+    border-radius: 8px;
+    padding: 13px 67px 13px 36px;
+    position: relative;
+    display: inline-flex;
+    text-decoration: none;
+    &:hover {
+        background: rgba(255,252,227,.63);
+        color: #aaa;
+    }
+    &:after {
+        content: '';
+        width: 14px;
+        height: 14px;
+        background-image: url('https://venus.io/images/btn-arrow.svg');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 36px;
+        margin: auto;
+        transition: .3s ease;
+    }
+    &:hover:after {
+        transform: translateX(5px);
+    }
+}
+
+.appBtn {
+    margin-top: 30px;
+    width: 50%;
+    height: 46px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-color);
+    text-transform: capitalize;
+    background-image: linear-gradient(to right, rgb(242, 194, 101), rgb(247, 180, 79));
+    &:hover {
+        text-decoration: none;
+        background-color: rgba(0, 0, 0, 0.04);
+    }
+  
+}
+
+
+
+.overlay {
+    width: 100%;
+    z-index: 1599;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 72px;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s ease;
+}
+
+
+
+.gridOne {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+.gridTwo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.gridThree {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.gridFour {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.gridFive {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.gridSix {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.textInline {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.centerDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.svgImg {
+    background: url('https://venus.io/images/sprites/main.svg');
+}
+
+.totallyLeft {
+    border-radius: 25px;
+    margin: 20px 15px;
+    background-color: var(--color-bg-primary);
+    padding: 37px 16px;
+}

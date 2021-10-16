@@ -1,0 +1,89 @@
+.mintRepay {
+    .safeMax {
+        display: flex;
+        align-items: center;
+        position: relative;
+        height: 135px;
+        input {
+            width: 65%;
+            margin-left: 17.5%;
+            border: none;
+            height: 100%;
+            font-size: 40px;
+            color: var(--color-yellow);
+            text-align: center;
+            background: transparent;
+        }
+        .label {
+            position: absolute;
+            right: 25px;
+            width: 12%;
+            text-align: center;
+            font-weight: 600;
+            font-size: 14px;
+            color: rgb(189, 189, 189);
+            text-transform: uppercase;
+        }
+    }
+    .confirm {
+        width: calc(100% - 40px);
+        height: calc(100% - 75px);
+        margin: 20px;
+        padding: 20px;
+        border-radius: 20px;
+        background-color: var(--color-bg-main);
+        .confirmItem {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 16px;
+            color: var(--text-color);
+            width: 100%;
+            margin-bottom: 20px;
+            & > div:first-child {
+                display: flex;
+                align-items: center;
+                & > div {
+                    margin-right: 1rem !important;
+                }
+            }
+        }
+       
+        .cta {
+            border-top: 1px solid var(--color-bg-active);
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            .notEnough {
+                text-align: center;
+                width: 100%;
+                font-size: 15px;
+                color: var(--text-secondary);
+                padding: 10px 25px;
+            }
+            .btnVAI {
+                border: none;
+                margin: 20px 0px;
+                width: 248px;
+                height: 41px;
+                border-radius: 5px;
+                background-image: linear-gradient(to right, rgb(242, 194, 101), rgb(247, 180, 79));
+            }
+            .btnVAI:disabled {
+                color: rgba(0,0,0,.25)!important;
+                background-color: #d3d3d3!important;
+                background-image: linear-gradient(90deg,#d3d3d3,#d3d3d3)!important;
+                border-color: #d9d9d9!important;
+                box-shadow: none!important;
+            }
+        }
+        .total {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 16px;
+            color: var(--text-color);
+        }
+    }
+}

@@ -1,0 +1,188 @@
+@import '@/styles/app.scss';
+
+.swap {
+    flex-grow: 1;
+    background-color: rgb(247, 248, 250) !important;
+    
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    .content {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 120px 16px 0px;
+        align-items: center;
+        z-index: 1;
+        .swapContent {
+            position: relative;
+            max-width: 480px;
+            padding: 1rem;
+            width: 100%;
+            background: rgb(255, 255, 255);
+            box-shadow: rgb(0 0 0 / 1%) 0px 0px 1px, rgb(0 0 0 / 4%) 0px 4px 8px, rgb(0 0 0 / 4%) 0px 16px 24px, rgb(0 0 0 / 1%) 0px 24px 32px;
+            border-radius: 24px;
+            margin-top: 1rem;
+            z-index: 1;
+            .header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1rem;
+                & > div:first-child {
+                    margin: 0px;
+                    min-width: 0px;
+                    font-weight: 500;
+                    font-size: 16px;
+                }
+            }
+            .formSwap {
+                border-radius: 20px;
+                margin-top: 0.5rem;
+                border: 1px solid rgb(237, 238, 242);
+                background-color: rgb(247, 248, 250);
+                padding: 1rem 1rem 0.75rem;
+                .asset {
+                    .infoAsset {
+                        font-size: 1.8rem;
+                        letter-spacing: 1.5px;
+                        font-weight: 600;
+                        background-color: rgb(255, 255, 255);
+                        color: rgb(0, 0, 0);
+                        border-radius: 16px;
+                        box-shadow: rgb(0 0 0 / 8%) 0px 6px 10px;
+                        cursor: pointer;
+                        padding: 6px 8px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        width: fit-content;
+                        .assetName {
+                            margin: 0 1rem;
+                        }
+                        &:hover {
+                            background-color: rgb(237, 238, 242);
+                        }
+                    }
+                    .selectToken {
+                        display: flex;
+                        font-size: 1.9rem;
+                        align-items: center;
+                        font-weight: 700;
+                        background-color: rgb(232, 0, 111);
+                        color: rgb(255, 255, 255);
+                        border-radius: 16px;
+                        box-shadow: rgb(0 0 0 / 8%) 0px 6px 10px;
+                        cursor: pointer;
+                        border: none;
+                        padding: 4px 13px;
+                        justify-content: space-between;
+                        white-space: nowrap;
+
+                        svg {
+                            margin-left: 1rem;
+                        }
+                    }
+                    
+                }
+
+                .inputValue {
+                    input {
+                        max-width: 150px;
+                        color: rgb(0, 0, 0);
+                        font-weight: 500;
+                        outline: none;
+                        border: none;
+                        background-color: rgb(247, 248, 250);
+                        font-size: 24px;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        padding: 0px;
+                        appearance: textfield;
+                        text-align: right;
+                        filter: none;
+                        opacity: 1;
+                        transition: opacity 0.2s ease-in-out 0s;
+                    }
+
+                }
+
+                .balance {
+                    display: flex;
+                    flex-flow: row nowrap;
+                    align-items: center;
+                    color: rgb(0, 0, 0);
+                    line-height: 1rem;
+                    padding: 0px 1rem 1rem;
+                    margin-top: 1.7rem;
+                }
+            }
+            .formSwap:last-child {
+                padding-bottom: 4rem;
+            }
+            .cta {
+                margin-top: 1rem;
+                background-color: rgb(237, 238, 242);
+                color: rgb(86, 90, 105);
+                cursor: pointer;
+                padding: 16px;
+                width: 100%;
+                font-weight: 500;
+                text-align: center;
+                border-radius: 20px;
+                border: 1px solid transparent;
+                text-decoration: none;
+                display: flex;
+                justify-content: center;
+                flex-wrap: nowrap;
+                align-items: center;
+                position: relative;
+                will-change: transform;
+                transition: transform 450ms ease 0s;
+                transform: perspective(1px) translateZ(0px);
+                div {
+                    box-sizing: border-box;
+                    margin: 0px;
+                    min-width: 0px;
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+.modalToken { 
+    transform: translateY(-10vh);
+    box-shadow: rgb(47 128 237 / 5%) 0px 4px 8px 0px;
+    padding: 0px;
+    width: 50vw;
+    align-self: center;
+    max-width: 420px;
+    max-height: 80vh;
+    min-height: 80vh;
+    border-radius: 20px;  
+    :global {
+        .ant-modal-header {
+            border-bottom: none;
+        }
+        .ant-modal-body {
+            padding: 1rem 0 0 0;
+        }
+        .ant-modal-title {
+            color: var(--dark-color);
+            text-align: left;
+            font-weight: bold;
+        }
+        .ant-modal-close-x {
+            svg {
+                fill: var(--dark-color);
+                font-size: 2rem;
+                font-weight: bold;
+            }
+        }
+    }
+}

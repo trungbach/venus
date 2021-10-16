@@ -1,0 +1,299 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  line-height: 1.5;
+  font-family: Nunito_Sans, Arial, sans-serif; 
+  -webkit-font-smoothing: antialiased;
+}
+
+
+@font-face {
+  font-family: "Averta";
+  src: url("../public/averta/AvertaDemoPE-ExtraBold.otf");
+}
+
+@font-face {
+  font-family: "Rajdhani";
+  src: url("../public/Rajdhani/Rajdhani-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Nunito_Sans";
+  src: url("../public/Nunito_Sans/NunitoSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Nunito_Sans Light";
+  src: url("../public/Nunito_Sans/NunitoSans-Light.ttf");
+}
+
+@font-face {
+  font-family: "NunitoSans-Bold";
+  src: url("../public/Nunito_Sans/NunitoSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: "NunitoSans-SemiBold";
+  src: url("../public/Nunito_Sans/NunitoSans-SemiBold.ttf");
+}
+
+
+@font-face {
+  font-family: "NunitoSans-ExtraBold";
+  src: url("../public/Nunito_Sans/NunitoSans-ExtraBold.ttf");
+}
+
+
+:root {
+  --primary-color: #f9be56;;
+  --background-text: linear-gradient(180deg, #C09645 7.5%, #FFC977 53.75%, #C09645 100%);
+  --color-bg-main: #090d27;
+  --color-bg-primary: #181c3a;
+  --color-bg-active: #252a4a;
+  --background-color: #14141A;
+  --lighten-background: #06054E;
+  --yellow-color: #FFD37E;
+  --secondary-color: #212529;
+  --text-color: #575757;
+  --paragraph-color: #cfdae4;
+  --dark-color: #14141A;
+  --text-color: #fff;
+  --text-secondary: #a1a1a1;
+  --border-radius: 10px;
+  --color-text-footer: #42434e;
+  --color-dark-green: #09d395;
+  --color-orange: #ff4a21;
+  --color-yellow: #f8b94b;
+  --color-green: #9dd562;
+  --color-text-inactive: #5e5f6a;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.5;
+}
+ul {
+  padding: 0;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0;
+}
+
+body {
+  font-size: 1.4rem;
+  color: var(--text-color);
+}
+
+#__next {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  transition: .3s ease;
+}         
+
+ul {
+  list-style: none;
+  
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.ant-select-dropdown {
+  background-color: var(--background-color);
+}
+
+.ant-select-item:hover {
+    transition: all 0.2s ease 0s;
+    box-shadow: rgb(4 17 29 / 25%) 0px 0px 8px 0px;
+    background-color: var(--background-color);
+    opacity: 1;
+}
+
+.ant-select-item-option-content  {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--text-color);
+  border-radius: 1rem;
+  
+}
+
+.ant-select-item-option-active  {
+  background-color:var(--background-color);
+  color: var(--text-color);
+  
+}
+
+.ant-select-item-option-selected {
+  background-color:var(--background-color) !important;
+  color: var(--text-color) !important;
+}
+
+.ant-select .ant-select-selector {
+  display: flex;
+  align-items: center;
+  height: auto !important;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--text-color);
+  background: var(--dark-color);
+}
+
+.ant-select-selector img{
+  padding-right: 2rem !important;
+}
+
+.ant-select-selection-item {
+  display: flex;
+  align-items: center;
+}
+
+.ant-collapse-header {
+  font-size: 1.6rem;
+  font-weight: 600;
+  background-color: var(--background-color);
+  padding: 20px !important;
+  user-select: none;
+  color: var(--text-color) !important;
+}
+
+.ant-collapse-content {
+    border-top: 1px solid var(--secondary-color);
+    color: var(--text-color);
+    background: var(--lighten-background);
+    padding: 20px;
+    
+}
+
+.ant-collapse-content .ant-collapse-content-box {
+  padding: 0;
+}
+
+.ant-collapse .ant-collapse-item {
+  border-bottom: 1px solid var(--lighten-background);
+}
+
+
+.ant-tooltip-inner {
+  font-weight: 600;
+  background-color: #000;
+}
+
+.ant-modal-mask {
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.ant-modal-header {
+  border-radius: 2rem 2rem 0 0;
+
+}
+
+.ant-modal-content {
+  border-radius: 2rem;
+}
+
+.ant-modal-footer {
+  padding: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid var(--dark-color);
+}
+
+.ant-select-arrow {
+  color: var(--text-color);
+}
+
+.ant-btn[disabled] {
+  opacity: 0.6;
+}
+
+.slick-arrow {
+  display: none !important;
+}
+
+.ant-collapse {
+  border: none;
+}
+.ant-table-wrapper, .ant-table-container {
+  background-color: transparent;
+  color: #fff;
+}
+.ant-table-thead > tr > th {
+  background: transparent;
+  color: #fff;
+}
+
+.ant-form-item-label label {
+  color: var(--text-color);
+}
+
+.ant-select-item-option-active:not(.ant-select-item-option-disabled) {
+  background: unset;
+}
+
+.ant-empty {
+  color: var(--text-color);
+}
+
+.ant-btn:hover, .ant-btn:focus, .ant-btn:active {
+  text-decoration: none;
+  background: unset;
+}
+
+.ant-input-affix-wrapper, .ant-input {
+  background-color: #29293c;
+  border-radius: 1rem;
+  border: none;
+  padding: 0.5rem;
+  text-indent: 1rem;
+
+}
+.ant-input-affix-wrapper:hover, .ant-input:hover {
+  background-color: #29293c;
+}
+
+.ant-input {
+  color: var(--text-color);
+}
+
+
+.ant-form-item-label > label {
+  align-items: baseline;
+}
+
+.ant-modal-mask {
+  z-index: 1500;
+}
+.ant-modal-wrap {
+  z-index: 1501;
+}
+
+.ant-btn-loading-icon {
+  display: flex !important;
+  align-items: center;
+}
+
+.ant-tabs-ink-bar {
+  display: none;
+}
+
+.ant-btn[disabled] {
+  cursor: not-allowed !important;
+}
+
+
+.activeHeader {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.container {
+  max-width: 1360px;
+  width: 100%;
+  padding: 0 30px;
+  margin: 0 auto;
+}

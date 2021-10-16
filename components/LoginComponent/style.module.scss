@@ -1,0 +1,17 @@
+@import '@/styles/base.scss';
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    h1 {
+        @include text-gradient;
+        font-weight: bold;
+        margin-bottom: 2rem;
+        font-size: 3rem;
+    }
+}

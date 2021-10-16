@@ -1,0 +1,162 @@
+@import '@/styles/app.scss';
+
+.pool {
+    flex-grow: 1;
+    background-color: rgb(247, 248, 250) !important;
+    
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    .content {
+        max-width: 870px;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 4rem;
+        .title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            h3 {
+                margin: 0px;
+                font-weight: 400;
+                font-size: 20px;
+            }
+            .headAction {
+                display: flex;
+                align-items: center;
+                font-size: 1.6rem;
+                .more {
+                    cursor: pointer;
+                    display: flex;
+                    font-weight: 700;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 12px;
+                    padding: 6px 8px;
+                    background-color: rgb(255, 255, 255);
+                    margin-right: 8px;
+                    color: rgb(86, 90, 105);
+                    font-size: 16px;
+                    font-weight: 500;
+                    &:hover {
+                      background-color: rgb(222, 224, 231);
+                    }
+                }
+                .newPosition {
+                    background-color: rgb(232, 0, 111);
+                    border-radius: 12px;
+                    padding: 6px 8px;
+                    font-weight: 700;
+                    text-align: center;
+                    border: 1px solid transparent;
+                    justify-content: center;
+                    flex-wrap: nowrap;
+                    align-items: center;
+                    cursor: pointer;
+                    a {
+                        color: white;
+                    }
+                    &:hover {
+                        background-color: rgb(207, 0, 99);
+                    }
+                }
+            }
+        }
+        .listLinks {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 8px;
+            margin-top: 2.5rem;
+            div {
+                width: 100%;
+            }
+            h4 {
+                font-weight: 600;
+                align-items: center;
+                display: flex;
+                margin-bottom: 14px;
+                font-weight: 900;
+                font-size: 20px;
+            }
+            p {
+                display: flex;
+                align-items: center;
+                max-width: 80%;
+                font-weight: 300;
+                font-size: 16px;
+                color: var(--dark-color);
+            }
+            a:hover {
+                border: 1px solid rgb(255, 255, 255);
+                text-decoration: none;
+            }
+            .about {
+                background: radial-gradient(92.78% 103.09% at 50.06% 7.22%, rgba(255, 58, 212, 0.07) 0%, rgba(255, 255, 255, 0.043) 100%), radial-gradient(100% 97.16% at 0% 12.22%, rgba(235, 0, 255, 0.2) 0%, rgba(243, 19, 19, 0.2) 100%);
+                padding: 2rem;
+                border-radius: 20px;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                justify-content: space-between;
+                align-items: center;
+                overflow: hidden;
+                border: 1px solid transparent;
+               
+            }
+            .top {
+                overflow: hidden;
+                padding: 20px;
+                border-radius: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                border: 1px solid transparent;
+                text-decoration: none;
+                cursor: pointer;
+                color: rgb(232, 0, 111);
+                font-weight: 500;
+                background-color: #e7d8e7;
+                background-image: linear-gradient(298deg, #e7d8e7 0%, #c658c6 100%);
+
+            }
+
+        }
+        .liquidity {
+            margin-top: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            background-color: #fff;
+            padding: 3rem 0;
+            svg {
+                color: rgb(110, 114, 125);
+            }
+            p {
+                margin-top: 1rem;
+                font-size: 1.6rem;
+                color: rgb(110, 114, 125);
+            }
+        }
+        .v2Liquid {
+            margin: 0px 4px;
+            margin-top: 2rem;
+            padding: 8px 16px;
+            border-radius: 12px;
+            width: fit-content;
+            font-size: 14px;
+            box-shadow: rgb(136 141 155) 0px 0px 0px 1px;
+            border: 1px solid rgb(237, 238, 242);
+            background-color: transparent;
+            a {
+                color: rgb(0, 0, 0);
+                font-weight: 600;
+                svg {
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+}

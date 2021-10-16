@@ -1,0 +1,131 @@
+@import '@/styles/base.scss';
+
+.sidebar {
+    @media only screen and (min-width: 768px) {
+        & {
+            width: 12.5%;
+        }
+    }
+    :global {
+        .ant-layout-sider {
+            height: 100vh;
+            min-width: 108px !important;
+            border-radius: 25px;
+            background-color: var(--color-bg-primary);
+            display: flex;
+            flex-direction: column;
+            margin-right: 30px;
+            width: auto !important;
+            max-width: auto !important;
+            flex: auto !important;
+        }
+        .ant-menu {
+            background: var(--color-bg-primary);
+            border: none;
+            margin-top: 100px;
+            @media only screen and (max-width: 1280px) {
+                & {
+                    margin-top: 60px;
+                }
+            }
+        }
+    }
+    .logo {
+        position: relative;
+        @media only screen and (max-width: 1280px) {
+            & > a > div {
+                width: 80px !important;
+            }
+        }
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 54px;
+    }
+    .menuItem {
+        display: flex;
+        align-items: center;
+        svg {
+            fill: #fff;
+        }
+        :global {
+            .ant-menu-title-content {
+                line-height: 14px;
+                font-weight: 600;
+                a {
+                    width: 80%;
+                    color: #fff;
+                    font-size: 16px;
+                    font-weight: 900;
+                    white-space: normal;
+                }
+                @media only screen and (max-width: 1440px) {
+                    & > a {
+                        font-size: 14px;
+                    }
+                }
+                @media only screen and (max-width: 1280px) {
+                    & > a {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+    .menuItem:hover, .activeMenu {
+        svg {
+            fill: var(--primary-color);
+        }
+        :global {
+            .ant-menu-title-content {
+                a {
+                    color: var(--primary-color);
+                }
+            }
+        }
+    }
+    .activeMenu {
+        background-color: var(--color-bg-active);
+    }
+
+    .total {
+        position: absolute;
+        bottom: 2rem;
+        width: 100%;
+        .totalValue {
+            margin-bottom: 20px;
+            span {
+                word-break: break-all;
+                text-align: center;
+                font-size: 16px;
+                font-weight: 900;
+                color: var(---text-color);
+                display: block;
+            }
+            div {
+                font-size: 16px;
+                font-weight: 900;
+                color: var(--text-secondary);
+                text-align: center;
+                text-transform: capitalize;
+            }
+        }
+        .connect {
+            width: 114px;
+            height: 30px;
+            border-radius: 5px;
+            background-image: linear-gradient(to right, rgb(242, 194, 101), rgb(247, 180, 79));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            span {
+                font-size: 13px;
+                font-weight: 500;
+                color: var(--text-color);
+                text-transform: capitalize;
+            }
+        }
+    }
+}
